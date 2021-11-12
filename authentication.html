@@ -45,6 +45,7 @@
                             <li><a href="index.html">Home</a></li>
                             <li><a href="course.html">Courses</a></li>
                             <li><a href="about.html">About</a></li>
+                            <li><a href="faq.html">Faq</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </nav>
@@ -62,7 +63,7 @@
         <!-- Page Header -->
         <section class="page-header flex">
             <div class="container">
-                <h2>Welcome to Wazobia Academy</h2>
+                <h2 class="authentication-page-title">Welcome to Wazobia Academy</h2>
             </div>
         </section>
 
@@ -72,7 +73,6 @@
             <div class="container flex">
 
                     <div class="login-form flow">
-
                         <h2>Login</h2>
     
                         <form class="authentication-form text-white flex">
@@ -87,14 +87,19 @@
                                     <input type="password" placeholder="Password">
                                 </div>
         
-                                <div class="login-options text-dark flex">
-                                    <p>Remember Me</p>
-                                    <a class="text-dark" href="#">Lost your password?</a>
+                                <div  class="login-options text-dark flex">
+                                    <div class="flex">
+                                        <input class="checkboxes" type="checkbox" id="test2">
+                                        <label class="checkboxes" for="test2">Remember Me</label>
+                                    
+                                    </div>
+
+                                    <a class="fs-300 text-dark" href="#">Lost your password?</a>
                                 </div>
 
 
                             <div>
-                                <input class="btn btn-primary" type="submit">
+                                <input class="btn btn-primary--alt" type="submit">
                             </div>
          
                         </form>
@@ -127,14 +132,14 @@
 
         
 
-                                <div class="input50 text-dark">
+                                <div class="fs-200 text-dark" style="font-style: italic">
                                     <p>The password should be at least eight characters long. To make it stronger, use upper and lower case letters, numbers, and symbols like ! " ? $ % ^ & )</p>
                                    
                                 </div>
                               
 
                             <div>
-                                <input class="btn btn-primary" type="submit">
+                                <input class="btn btn-primary--alt" type="submit">
                             </div>
          
                         </form>
@@ -195,5 +200,8 @@
             <p>© 2021 By Wazobia Academy</p>
         </div>
     </footer>
+
+
+    <script src="index.js"></script>
 </body>
 </html>
