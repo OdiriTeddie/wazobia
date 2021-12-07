@@ -108,7 +108,7 @@ ol[role="list"] {
 /* remove animations for people who've turned them off */
 @media (prefers-reduced-motion: reduce) {
 
-    htm:focus-within {
+    html:focus-within {
         scroll-behavior: auto;
     }
 
@@ -1125,7 +1125,149 @@ input:not([type="submit"]) {
 
 
 
+ /* -------------------------- */
+/* User-Profile   Page         */
+/* -------------------------- */
 
+
+.user-container {
+    padding: 0 2em;
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
+.user-avatar {
+    width: 5rem;
+    
+}
+
+.user-profile {
+    background: #F7F5F4;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+
+.user-profile .container {
+    align-items: center;
+    justify-content:
+}
+
+.user-profile__cta {
+    border: 1.2px solid #000;
+    font-size: 0.859em;
+    box-shadow: -10px 9px 0px #000;
+    
+    background: #fff;
+    padding: 1rem;
+}
+
+.user-profile__cta:hover {
+    cursor: pointer;
+    box-shadow: -10px 9px 0px #000;
+    /* transform: translate(-10px); */
+}
+
+.user-profile__welcome {
+    align-items: center;
+}
+
+.user__pro {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+/* User detail section */
+
+.user-detail {
+    padding: 1rem 0;
+}
+
+.user-details__sections {
+    border-bottom: 1px solid #333;
+}
+
+.user-details__sections a {
+    color: #333;
+    font-size: var(--fs-300)
+}
+
+.user-details__sections a.current {
+    color: #1865F2;
+}
+
+.user-details__sections ul li.current {
+    background: #F7F8FA;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.user-details__sections h2, 
+.user-details__sections ul li {
+    padding: 0.4rem;
+    padding-left: 1.5rem;
+}
+
+.profile-details {
+    --gap: 5rem;
+    flex-direction: row;
+}
+
+
+
+ /* -------------------------- */
+/* Gallery      Page         */
+/* -------------------------- */
+
+
+.button-container {
+    --gap: 0;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-around; */
+    width: 15rem;
+    margin: 0 auto;
+    box-shadow: 1px 2px 10px rgba(0,0,0, 0.15);
+    border-radius: 50px;
+}
+
+.gallery__picture,
+.gallery__video {
+    padding: 0.7rem;
+    width: 100%;
+    text-align: center;
+}
+
+.current-gallery {
+    background:hsl( var(--clr-primary-300) );
+    color: #fff;
+    border-radius: 50px;
+}
+
+.gallery-tab {
+    --flow-space: 3rem;
+    /* position: relative; */
+    /* overflow: hidden; */
+}
+
+.gallery-tab__content-body {
+    position: relative;
+    min-height: 100%;
+}
+
+.gallery-tab__content-body  .gallery-videos_content {
+    position: absolute;
+    top: 0;
+}
+
+.gallery-tab__content-body > div {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.gallery-tab__content-body > div.active {
+    opacity: 1;
+}
 
 
  /* -------------------------- */
@@ -1308,6 +1450,41 @@ input:not([type="submit"]) {
     .faq__content,
     .faq__img {
         width: 100%;
+    }
+
+      /* -------------------------- */
+    /* User-Profile Page        */
+    /* -------------------------- */
+  
+
+    .user-profile__welcome {
+        flex-direction: row;
+    }
+
+    .user-detail .user-container{
+        flex-direction: row;
+    }
+
+    .user-details__sections {
+        width: 25%;
+        border-right: 1px solid #333;
+        border-bottom: 0;
+
+    }
+
+    
+      /* -------------------------- */
+    /* User-Profile Page        */
+    /* -------------------------- */
+
+    .gallery-pictures_content {
+        --gap: 1.5rem;
+        grid-template-columns: repeat(3, 1fr );
+    }
+
+    .gallery-videos_content {
+        --gap: 1.5rem;
+        grid-template-columns: repeat(3, 1fr );
     }
 
 

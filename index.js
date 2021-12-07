@@ -3,6 +3,15 @@ const accordionItemHeaders = document.querySelectorAll('.accordion-item-header')
 const nav = document.querySelector('nav');
 const toggleBtn = document.querySelector('.mobile-nav-toggle');
 
+const tabContainer = document.querySelector('.button-container');
+
+const pictureTab = document.querySelector('.gallery__picture');
+const videoTab = document.querySelector('.gallery__video');
+
+const galleryPictures = document.querySelector('.gallery-pictures_content')
+
+const galleryVideos = document.querySelector('.gallery-videos_content')
+
 
 
 accordionItemHeaders.forEach(accordionItemHeader => {
@@ -41,4 +50,27 @@ function toggleNav(e) {
 }
 
 
+function toggleTab(e) {
+   if(e.target == videoTab ) {
+       pictureTab.classList.remove('current-gallery');
+       videoTab.classList.add('current-gallery');
+       galleryPictures.classList.remove('active');
+       galleryVideos.classList.add('active');
+   } else if(e.target == pictureTab ) {
+       videoTab.classList.remove('current-gallery');
+       pictureTab.classList.add('current-gallery');
+       galleryVideos.classList.remove('active');
+       galleryPictures.classList.add('active');
+   };
+
+
+}
+
+
+
+
+tabContainer.addEventListener('click', toggleTab);
+
 toggleBtn.addEventListener('click', toggleNav);
+
+
