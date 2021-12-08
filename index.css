@@ -1265,7 +1265,7 @@ input:not([type="submit"]) {
     transition: opacity 0.5s ease-in-out;
 }
 
-.gallery-tab__content-body > div.active {
+.gallery-tab__content-body > div.gallery-active {
     opacity: 1;
 }
 

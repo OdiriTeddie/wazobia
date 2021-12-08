@@ -54,13 +54,13 @@ function toggleTab(e) {
    if(e.target == videoTab ) {
        pictureTab.classList.remove('current-gallery');
        videoTab.classList.add('current-gallery');
-       galleryPictures.classList.remove('active');
-       galleryVideos.classList.add('active');
+       galleryPictures.classList.remove('gallery-active');
+       galleryVideos.classList.add('gallery-active');
    } else if(e.target == pictureTab ) {
        videoTab.classList.remove('current-gallery');
        pictureTab.classList.add('current-gallery');
-       galleryVideos.classList.remove('active');
-       galleryPictures.classList.add('active');
+       galleryVideos.classList.remove('gallery-active');
+       galleryPictures.classList.add('gallery-active');
    };
 
 
@@ -69,8 +69,8 @@ function toggleTab(e) {
 
 
 
-tabContainer.addEventListener('click', toggleTab);
 
 toggleBtn.addEventListener('click', toggleNav);
 
+tabContainer.addEventListener('click', toggleTab);
 
