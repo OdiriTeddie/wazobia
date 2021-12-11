@@ -158,7 +158,11 @@ function toggleUserSection(e) {
 
 toggleBtn.addEventListener('click', toggleNav);
 
-userProfileSection.addEventListener('click', toggleUserSection);
+if(document.getElementById('gallery')) {
+    tabContainer.addEventListener('click', toggleTab);
+}
 
-console.log('yes');
-tabContainer.addEventListener('click', toggleTab);
+if(document.getElementById('my-account')) {
+    userProfileSection.addEventListener('click', toggleUserSection);
+}
+
