@@ -40,10 +40,10 @@ const helppp = document.querySelector('.user-details__content_help')
 ///////////////////// Gallery Modal Light Box
 const gallery = document.querySelectorAll('.gallery-pictures_content .image')
 const previewBox = document.querySelector('.preview-box');
-const previewImg = previewBox.querySelector('img')
-const closeIcon = previewBox.querySelector('.icon');
-const currentImg = previewBox.querySelector('.current-img');
-const totalImg = previewBox.querySelector('.total-img');
+const previewImg = document.querySelector('.preview-box img')
+const closeIcon = document.querySelector('.preview-box .icon');
+const currentImg = document.querySelector('.preview-box .current-img');
+const totalImg = document.querySelector('.preview-box .total-img');
 const shadow = document.querySelector('.shadow');
 
 window.onload = () => {
