@@ -107,6 +107,8 @@ window.onload = () => {
                 shadow.style.display = 'none';
                 document.querySelector('body').style.overflow = 'auto';
             }
+
+           
         }
     }
 }
