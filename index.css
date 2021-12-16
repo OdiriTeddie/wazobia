@@ -229,6 +229,7 @@ ol[role="list"] {
     cursor: pointer;
     display: inline-block;
     border: 0;
+    outline: 0;
     padding: 0.65em 1.8em;
     border-radius: 5px;
     font-size: var(--fs-400);
@@ -257,6 +258,10 @@ ol[role="list"] {
    background-color: hsl(var(--clr-neutral-300))
 }
 
+/* .btn-primary--alt {
+    border-radius: 50px;
+} */
+
 .btn-primary--alt:hover {
     color: hsl( var(--clr-neutral-300) );
     background-color: hsl(var(--clr-primary-300) / 0.9 );
@@ -272,6 +277,12 @@ ol[role="list"] {
  .btn-accent:focus {
    color: hsl( var(--clr-neutral-300) );
    background-color: hsl(var(--clr-primary-300));
+}
+
+.btn-accent--alt:hover,
+.btn-accent--alt:focus {
+   color: hsl( var(--clr-neutral-400) );
+   background-color: hsl(var(--clr-neutral-300));
 }
 
 .btn-light {
@@ -352,7 +363,9 @@ ol[role="list"] {
 }
 
 .header-social-login {
+    --gap: 2rem;
     flex-direction: row;
+    align-items: center;
 }
 
 
