@@ -374,7 +374,7 @@ ol[role="list"] {
 }
 
 .follow {
-    --gap: 0.rem;
+    --gap: 0rem;
     flex-direction: row;
 }
 
