@@ -63,7 +63,7 @@ body {
     /* overflow: hidden; */
 }
 
-/* Reset Marging */
+/* Headings */
 
 
 h1,
@@ -422,6 +422,10 @@ nav {
     
 }
 
+.mobile-nav-toggle {
+    display: none;
+}
+
 @media(max-width: 48em ) {
     .upper-header .container  {
         justify-content: center;
@@ -663,7 +667,7 @@ nav {
 }
 
 .contact .container {
-    --gap: 3rem;
+    --gap: 4rem;
     z-index: 100;
     width: 100%;
 }
