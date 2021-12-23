@@ -632,6 +632,11 @@ nav {
     text-align: center;
 }
 
+.about__img img{
+    border-radius: 5px;
+   
+}
+
 
 /************* partners ******************/
 
@@ -1670,6 +1675,8 @@ input:not([type="submit"]) {
    .about-page__content > div {
        width: 100%;
    }
+
+ 
 
    .affordable {
        text-align: left;
