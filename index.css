@@ -1667,6 +1667,10 @@ input:not([type="submit"]) {
        align-items: center;
    }
 
+   .about-page__content > div {
+       width: 100%;
+   }
+
    .affordable {
        text-align: left;
    }
