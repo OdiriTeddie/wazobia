@@ -572,6 +572,7 @@ nav {
     align-items: center;
     padding-bottom: 0.8rem;
     border-bottom: 1px solid hsl( var(--clr-primary-300) / 0.2 );
+   
 }
 
 .courses__price i {
@@ -582,10 +583,15 @@ nav {
 .courses__price p {
     font-size: clamp(0.7rem, 1.2rem, 3rem);
     font-weight: 700;
+   
 }
 .course-btn {
   text-align: center;
 }
+
+
+
+
 
  /* -------------------------- */
 /* About                      */
@@ -768,8 +774,12 @@ nav {
     box-shadow: 1px 3px 15px rgba(0,0,0, 0.15);
 }
 
+
+
 .testimonial__client  {
     --gap: 1rem;
+
+    margin-top: auto;
     flex-direction: row;
     align-items: center;
 }
@@ -783,6 +793,10 @@ nav {
     border-radius: 50%;
     border: 3px solid hsl( var(--clr-primary-400) );
 }
+
+/* .testimonial__box .testimonia__name {
+    margin-top: auto;
+} */
 
 /* .testimonial__client h2 {
     font-size
