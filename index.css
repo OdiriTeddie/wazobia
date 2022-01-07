@@ -6,7 +6,7 @@
 
     /* colors */
 
-    --clr-primary-300: 284, 100%, 15%;
+    --clr-primary-300: 284 100% 15%;
     --clr-primary-400: 47 100% 53%;
 
     --clr-neutral-300: 0 0% 100%;
@@ -318,7 +318,7 @@ ol[role="list"] {
     height: 100%;
     top: 0;
     left: 0;
-    background-color: hsl(var(--clr-primary-300) / 0.8);
+    background-color: hsl(var(--clr-primary-300) / 0.3);
     z-index: 10;
 }
 
@@ -621,7 +621,7 @@ nav {
     height: 100%;
     top: 0;
     left: 0;
-    background-color: hsl(var(--clr-primary-300) / 0.8);
+    background-color: hsl(var(--clr-primary-300) / 0.6);
     z-index: 100;
 }
 
@@ -673,7 +673,7 @@ nav {
     height: 100%;
     top: 0;
     left: 0;
-    background-color: hsl(var(--clr-primary-300) / 0.8);
+    background-color: hsl(var(--clr-primary-300) / 0.6);
     z-index: 10;
 }
 
