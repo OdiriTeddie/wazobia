@@ -6,7 +6,7 @@
 
     /* colors */
 
-    --clr-primary-300: 218 67% 18%;
+    --clr-primary-300: 284, 100%, 15%;
     --clr-primary-400: 47 100% 53%;
 
     --clr-neutral-300: 0 0% 100%;
@@ -784,6 +784,10 @@ nav {
     align-items: center;
 }
 
+.testimonial__client h4 {
+    text-transform: uppercase;
+}
+
 .testimonial__client img {
     background-color: hsl( var(--clr-primary-400) / 0.6 );
     padding: 0.5rem;
@@ -859,7 +863,7 @@ nav {
 
 .footer__copyright {
     padding: 1rem;
-    background-color: #0d2246;
+    background-color: #2a003a;
 }
 
 
@@ -1624,11 +1628,7 @@ input:not([type="submit"]) {
     }
 
 
-    /* Contact */
-
-    .contact__content {
-        text-align: left;
-    }
+    
 
 
     /*************** partners ********************/
@@ -1644,12 +1644,20 @@ input:not([type="submit"]) {
         width: 15%;
     }
 
+     /*************** Contact ********************/
+
     .contact .container {
         grid-template-columns: repeat(2, 1fr );
     }
 
     .contact-form {
         justify-content: end;
+    }
+
+    /* Contact */
+
+    .contact__content {
+        text-align: left;
     }
 
 
