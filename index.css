@@ -791,9 +791,9 @@ nav {
 .testimonial__client img {
     background-color: hsl( var(--clr-primary-400) / 0.6 );
     padding: 0.5rem;
-    width: 3rem;
-    height: 3rem;
-    line-height: 3rem;
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
     border-radius: 50%;
     border: 3px solid hsl( var(--clr-primary-400) );
 }
@@ -951,7 +951,7 @@ select {
 }
 
 .com-video {
-    background: #f7f7f7;
+    background: #fafafa;
     text-align: center;
 }
 
